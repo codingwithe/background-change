@@ -1,0 +1,59 @@
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@media only screen and (min-width: 768px) {
+    .balls li {
+        background-color: lightblue;
+        height: 5rem;
+        width: 5rem;
+    }
+}
+
+body {
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: white;
+    border: 20px solid rgb(1, 11, 22);
+    display: grid;
+    height: 95vh;
+}
+.animation-box {
+    margin: auto;
+    width: 75%;
+}
+
+.buttons {
+    list-style-type: none;
+    padding: 1rem;
+    text-align: center;
+}
+
+.buttons button {
+    background-color: rgb(41, 35, 58);
+    border: 1px solid #a6bba3;
+    border-radius: 100%;
+    color: white;
+    display: inline-block;
+    font-family: cursive;
+    font-size: 2em;
+    margin: 5px;
+    height: 2em;
+    width: 2em;
+}
+
+#bg-change {
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px darkslategray;
+    height: 4em;
+    width: 10em;
+}
+
+#bg-change:hover {
+    background-color: lightgrey;
+    color: rgb(41, 35, 58);
+}
