@@ -4,11 +4,7 @@
 }
 
 @media only screen and (min-width: 768px) {
-    .balls li {
-        background-color: lightblue;
-        height: 5rem;
-        width: 5rem;
-    }
+    
 }
 
 body {
@@ -20,6 +16,7 @@ body {
     border: 20px solid rgb(1, 11, 22);
     display: grid;
     height: 95vh;
+    margin: auto;
 }
 .animation-box {
     margin: auto;
@@ -38,17 +35,14 @@ body {
     border-radius: 10px;
     box-shadow: 3px 3px 10px darkslategray;
     color: white;
-    display: inline-block;
-    font-family: cursive;
+    font-family: Helvetica;
     font-size: 2em;
-    margin: 5px;
+    margin: auto;
     height: 4em;
     width: 10em;
 }
 
 .button:hover {
-    background-color: rgb(100, 120, 140);
-    color: rgb(41, 35, 58);
     cursor: pointer;
     cursor: hand;
 }
