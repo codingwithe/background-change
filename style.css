@@ -3,8 +3,11 @@
     margin: 0;
 }
 
-@media only screen and (min-width: 768px) {
-    
+@media (max-width: 368px) {
+    .button {
+    height: 2em;
+    width: 6em;
+    }
 }
 
 body {
