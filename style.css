@@ -1,26 +1,76 @@
 * {
+    --nav-color: darkslategray;
     padding: 0;
     margin: 0;
 }
 
-@media (max-width: 368px) {
-    .button {
-    height: 2em;
-    width: 6em;
-    }
+body {
+    text-align: center;
 }
 
-body {
-    box-sizing: border-box;
+@keyframes fadeIn{
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+        }
+    25%{
+        transform: translateY(-75px);
+        opacity: .40;
+        }
+    50%{
+        transform: translateY(-50px);
+        opacity: .65;
+        }
+    75%{
+        transform: translateY(-25px);
+        opacity: .9;
+        }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+        }
 }
+#navbar {
+    align-content: center;
+    animation: fadeIn 2s 1 0s ease-in;
+    background-color: var(--nav-color, gray);
+    height: 20%;
+    justify-items: center;
+    left: 0px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+  }
+
+nav ul {
+    color: white;
+    justify-items: center;
+    margin: 0px;
+    padding: 25px 15px 5px 15px;
+  }
+
+nav li {
+    background-color: var(--nav-color, gray)y;
+    color: white;
+    display: inline-block;
+    font-family: helvetica;
+    font-size: 1.5em;
+    padding: 5px 25px 5px 25px;
+    text-transform: uppercase;
+  }
+
+a {
+    justify-self: center;
+    text-decoration: none;
+  }
 
 .container {
     background-color: white;
-    border: 20px solid rgb(1, 11, 22);
     display: grid;
     height: 95vh;
     margin: auto;
 }
+
 .animation-box {
     margin: auto;
     width: 75%;
@@ -34,7 +84,7 @@ body {
 
 .button {
     background-color: rgb(41, 35, 58);
-    border: 1px solid #a6bba3;
+    color: white;
     border-radius: 10px;
     box-shadow: 3px 3px 10px darkslategray;
     color: white;
@@ -42,10 +92,19 @@ body {
     font-size: 2em;
     margin: auto;
     height: 4em;
-    width: 10em;
+    width: 4em;
 }
 
 .button:hover {
     cursor: pointer;
     cursor: hand;
+}
+@media (max-width: 500px) {
+    .button {
+    height: 1em;
+    width: 1.5em;
+    }
+    nav li {
+        font-size: 1em;
+    }
 }
