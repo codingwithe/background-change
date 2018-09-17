@@ -32,7 +32,7 @@ body {
 }
 #navbar {
     align-content: center;
-    animation: fadeIn 2s 1 0s ease-in;
+    animation: fadeIn 1s 1 0s ease-in;
     background-color: var(--nav-color, gray);
     height: 20%;
     justify-items: center;
