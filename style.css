@@ -67,6 +67,7 @@ a {
 a:hover {
     cursor: pointer;
     cursor: hand;
+    outline: none;
 }
 
 .container {
